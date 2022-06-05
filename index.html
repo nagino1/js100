@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* for ([初期化式]; [条件式]; [加算式])
+        セミコロンで区切られた3つのブロックで構成されています。もっと具体的に解説すると、以下のように記述できます。
+        for ( カウンタ変数定義と初期化 ; 繰り返し回数の指定 ; カウンタ加算幅 ){
+        // 実際に実行する処理
+        } */
+
+/*     function calculateArea(a, b) {
+        // ここに処理を記述！
+        return a * b ;
+    }
+    console.log(calculateArea(2, 5)); // 10
+    console.log(calculateArea(10, 10)); // 100
+ */
+
+//1
+//整数の入力値aとbを比較し大きい方の値を出力するcompareNumbers()関数を作成してください．a と b が等しい場合はeqと出力して下さい．
+/*     function compareNumbers(a, b) { 
+        if(`a>b`||`b>a`){
+            return Math.max(a, b);
+        }else(`a==b`){
+            return "eq" ;
+        }
+        
+    }
+    console.log(compareNumbers(2, 5)); // 5
+    console.log(compareNumbers(10, 9)); // 10
+    console.log(compareNumbers(2, 2)); // eq */
+
+/*     function compareNumbers(a, b){
+            if (a>b){
+                return a;
+            }else if (a<b){
+                return b;
+            }else if(a==b){
+            return "eq"
+            }
+
+    }
+        console.log(compareNumbers(2, 5)); // 5
+        console.log(compareNumbers(10, 9)); // 10
+        console.log(compareNumbers(2, 2)); // eq  */
+
+/*     //NO2 単位の計算
+    function convertToMm(n, s) { 
+        if(s=="km"){
+            return n * 10000000;
+        }else if(s=="cm"){
+            return n * 10;
+        }
+
+    }
+        console.log(convertToMm(1, "km")); // 1000000
+        console.log(convertToMm(54, "km")); // 54000000
+        console.log(convertToMm(2, "cm")); // 20 */
+
+ /*   //no3 奇数か偶数か
+            //正の整数nが入力されるので，n奇数ならばodd偶数ならばevenと出力するoddOrEven()関数を作成してください．
+
+
+            function oddOrEven(n) { 
+                if((n % 2) != 0){
+                    return "odd";
+                }else if((n % 2) == 0){
+                    return "even";
+                }
+            }
+            console.log(oddOrEven(4)); // even
+            console.log(oddOrEven(5)); // odd
+            console.log(oddOrEven(2)); // even */
+
+/*         //no4 西暦の計算
+            //2 つの西暦aとbを入力し，aからbが何年間あるか出力するcalculateYears()関数を作成してください（a < bとする）．
+            function calculateYears(a, b) { 
+                return b - a;
+            }
+            console.log(calculateYears(1990, 2014)); // 24
+            console.log(calculateYears(1999, 2000)); // 1
+            console.log(calculateYears(794, 1192)); // 398 */
+
+/*          //no5 何番目？
+            //以下のような A〜Z(半角英字大文字) の中から 1 文字入力されます．
+
+            //ABCDEFGHIJKLMNOPQRSTUVWXYZ A を 1 番目としてアルファベット順で何番目かを出力するjudgeTh()関数を作成してください．
+
+            //例えばCを入力した場合は3と出力して下さい．
+
+
+                function judgeTh(c) { 
+                    const str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // 任意の文字列
+                    return str.indexOf(c)+1;                
+
+                }
+
+                console.log(judgeTh("C")); // 3
+                console.log(judgeTh("X")); // 24 */
+            
+/*             //no6 絶対値
+                //-100から100までの整数nが与えられるので，絶対値を出力するgetAbs()関数を作成してください．
+
+
+                function getAbs(n) { 
+                    return Math.abs(n);
+                }
+
+                console.log(getAbs(-10)); // 10
+                console.log(getAbs(15)); // 15
+                console.log(getAbs(0)); // 0
+                 */
+
+/*                //no7割り算
+                //整数mとnを入力し，mをnで割り算した商と余りを半角スペース区切りの文字列で出力するgetQuotientAndSurplus()関数を作成してください．
+                function getQuotientAndSurplus(m, n) { 
+                    return Math.floor(m/n) + " " + (m%n);
+                }
+                console.log(getQuotientAndSurplus(10, 3)); // 3 1
+                console.log(getQuotientAndSurplus(12, 14)); // 0 12 */
+
+                //no8 小文字を大文字に
+                //半角アルファベットの小文字で構成された長さnの文字列sが与えられます．
+                //文字列sを大文字に変換して出力するconvertToUppercase()関数を作成してください．
+/*                      function convertToUppercase(s) { 
+                         return s.toUpperCase(); //小文字は　→　s.toLowerCase() ;
+                     }
+
+                    console.log(convertToUppercase("gsacademy")); // GSACADEMY
+                    console.log(convertToUppercase("abcdefghijklmnopqrstuvwxyz")); // ABCDEFGHIJKLMNOPQRSTUVW
+ */
+                
+                //no9掛け算のリスト
+                //正の整数 1 から 9 に整数 n をそれぞれを掛けた数を半角スペース区切りで出力する関数createList()関数を作成してください．
+                //例えば n = 2 の場合は
+                //2 4 6 8 10 12 14 16 18
+
+                    //function createList(n) { 
+                        //const str = "123456789";
+                        //return n*str
+                    //}表示わからん・・・
+
+                        /* for ([初期化式]; [条件式]; [加算式])
+                        セミコロンで区切られた3つのブロックで構成されています。もっと具体的に解説すると、以下のように記述できます。
+                        for ( カウンタ変数定義と初期化 ; 繰り返し回数の指定 ; カウンタ加算幅 ){
+                        // 実際に実行する処理} */
+
+ /*                    function createList(n) { 
+                        const array = [];
+                        for(i=1; i<10; i++){
+                            array.push(i*n)　 //プッシュで配列[]に追加する
+                        }
+                        return array.join("");　//「.join」で配列を文字列にする
+
+                    }
+                    console.log(createList(2)); // 2 4 6 8 10 12 14 16 18
+                    console.log(createList(3)); // 3 6 9 12 15 18 21 24 27
+                    console.log(createList(5)); // 5 10 15 20 25 30 35 40 45
+*/
+                //no10 等差数列
+                        //以下のような数列を考えます．
+
+                        //5 8 11 14 17 20 23 26 29 32
+
+                        //最初の数字が 5 で，3 ずつ増加していく事がわかります． 一般的にこれを初項 5，公差 3 の等差数列といいます．
+
+                        //このような数列を出力するプログラムを作りましょう．
+
+                        //初項mと公差nが入力し，10 番目までの数字をスペース区切りで出力するcreateSequence()関数を作成してください．
+
+
+/*                         function createSequence(m, n) { 
+                            const array =[];
+                            for(i=0;i<10;i++){
+                                array.push(m + i * n );
+                            }
+                            return array.join("");
+                        }
+                        
+                        console.log(createSequence(3, 3)); // 3 6 9 12 15 18 21 24 27 30
+                        console.log(createSequence(5, 10)); // 5 15 25 35 45 55 65 75 85 95
+                        console.log(createSequence(1, 3)); // 1 4 7 10 13 16 19 22 25 28
+ */
+                //no11カウントダウン
+                        //正整数nが入力されるので，nから 1 まで 1 ずつカウントダウンするcountDown()関数を作成してください．
+
+                        //例えば３と入力された場合3 2 1と出力してください．
+
+
+                            // function countDown(n) { 
+                            //     const array = [];
+                            //     for(i=0; i<n; i++){
+                            //         array.push( n - i );
+                            //     }
+                            //     return array.join("") ;   //「.join」で配列を文字列にする
+             
+                            // }
+
+                            // console.log(countDown(3)); // 3 2 1
+                            // console.log(countDown(10)); // 10 9 8 7 6 5 4 3 2 1
+                        
+                // //no12 N 文字目まで出力
+                //     //半角アルファベットで構成された文字列sと正の整数n入力されます．
+
+                //     //1 文字目からn文字目までを出力するgetOneToN()関数を作成してください．
+
+                //     //例えばabcdefgと4と入力された場合abcdと出力して下さい．
+
+                //     function getOneToN(s, n) { 
+                //         return s.substr(0,n); //substrを使ってsがゼロ番目以降の文字から指定した文字数ｎ番目まで表示
+                //     }
+                    
+                //     console.log(getOneToN("aabbccdd", 5)); // aabbc
+                //     console.log(getOneToN("gsacademyfukuoka", 9)); // gsacademy
+
+                //no13 最大と最小
+                    //5 個の数字 n_1, n_2, n_3, n_4, n_5 が半角スペース区切りで与えられます．
+                    //それらの数字の最大の数字，最小の数字を半角スペース区切りで出力するgetMaxAndMin()関数を作成してください．
+                    //例えば9 1 2 3 6 10と入力された場合123と出力してください．
+                    // function getMaxAndMin(s) {
+                    //     const array = s.split(" ");//split()で最大分割数を指定して文字列を分割する
+                    //     const max = Math.max(...array); //配列名に ... をつけることで、配列要素をカンマで連結した構文に展開されます。
+                    //     const min = Math.min(...array);
+                    //     return max + " " + min;
+                    //  }
+                     
+                    // console.log(getMaxAndMin("9 12 3 6 10")); // 12 3
+                    // console.log(getMaxAndMin("1 1 2 2 3")); // 3 1
+                    // console.log(getMaxAndMin("5 9 -1 10 2")); // 10 -1
+                
+                //no14 文字列から N 番目
+                    // 半角アルファベット文字列sと整数nが入力されます．
+                    // 文字列sの 1 番左の文字を 1 文字目としn文字目のアルファベットを出力するgetNthChar()関数を定義してください．
+                    // 例えばgsacademyと3と入力された場合aと出力して下さい．
+
+                    // function getNthChar(s, n) { 
+                    //     return s.charAt(n-1) ////chrAt 変数名.charAt(値)「文字列から指定位置の1文字を取得する」
+                    // }
+
+                    // console.log(getNthChar("gsacademy", 3)); // a
+                    // console.log(getNthChar("abcdefg", 5)); // e
+                    // console.log(getNthChar("qwertyu", 1)); // q
+
+                //no15 文字列の一致
+                    //文字列sと文字列tが半角スペース区切りで入力されます．
+                    //sとtが完全一致していれば「Yes」，それ以外は「No」と出力するisEqual()関数を作成してください．
+
+
+                    // function isEqual(s, t) { 
+                    //     if(s==t){
+                    //         return ("yes")
+                    //     }else{
+                    //         return ("no")
+                    //     }
+                    // }
+
+                    // console.log(isEqual("gsacademy", "gsacademy")); // Yes
+                    // console.log(isEqual("JavaScript", "ジャバスク")); // No
+                    // console.log(isEqual("aaaaa", "aaaaaa")); // No
+                    
+                //no16 A の個数
+                    //半角アルファベットで構成された文字列sが与えられます．
+                    //sに含まれる半角アルファベット「A」の数を出力するgetNumberOfA()関数を作成してください．
+                    // function getNumberOfA(s) { 
+                    //     const ex = /A/g;
+                    //     const array = s.match(ex);
+                    //     if(array==null){
+                    //         count = 0;
+                    //     }else{
+                    //         count = array.length;
+                    //     }
+                    //     return count;
+
+                    // }
+                
+                    // console.log(getNumberOfA("GSACADEMY")); // 2
+                    // console.log(getNumberOfA("aAaAaA")); // 3
+                    // console.log(getNumberOfA("JavaScript")); // 0
+                
+                //no17 表面積の計算
+                    // 立方体の表面積を求めましょう．
+                    //  一辺の長さaが入力されるので，立方体の表面積を出力するgetSurfaceArea()関数を作成してください．
+
+                    // function getSurfaceArea(a) {
+                    //     return a*a*6
+                    //  }
+                    // console.log(getSurfaceArea(4)); // 96
+                    // console.log(getSurfaceArea(1)); // 6
+                
+                //no18 三角形の内角の和
+                    //平面上の三角形の 2 つの角の角度a, bを入力し，残りの 1 つの角の角度を出力するgetAngle()関数を作成してください．
+
+                    // function getAngle(a, b) {
+                    //     return 180-(a+b)
+                    //  }
+                    // console.log(getAngle(30, 90)); // 60
+                    // console.log(getAngle(45, 45)); // 90
+                
+                //no19 数字の出力
+                    //ある正の整数n（最大 2 桁）が入力されます．
+                    //nを 0 埋め 3 桁で出力するzeroPadding3()関数を作成してください．
+                    // 例えば以下のような入力の場合98 以下のように出力して下さい
+                    //098
+                    // function zeroPadding3(n) {
+                    //     return ("000" + n ).slice(-3); 
+                    //  }//ゼロパディング(zero padding)とは、書式の桁数に満たない数値の場合に、足りない桁数だけ 0 を追加して桁数を合わせることです。
+
+                    // console.log(zeroPadding3(98)); // 098
+                    // console.log(zeroPadding3(2)); // 002
+                    //希望の桁数だけ '000' の0を増やし、その桁数を solice( -3 ) として指定します。
+                
+                //no20 一週間の予定
+                    //あなたは 1 週間を全て休みにするために有給を申請することにしました．もともと決まっている休みもあります．
+                    //半角スペース区切りで 7 日間の休みが，休みならば「yes」，休みでなければ「no」と入力されます．
+                    //有給申請しなくては行けない日数を出力するgetPaidHolidays()関数を作成してください．
+                    // function getPaidHolidays(s) { 
+                    //     const count = (s.match(/no/g) || []).length;//文字列に特定の文字が何個あるかを確認する方法
+                    //     return count
+                        
+                    // }
+                    // console.log(getPaidHolidays("yes yes yes yes no no yes")); // 2
+                    // console.log(getPaidHolidays("yes no no no no no yes")); // 5
+
+                //no21n までの和
+                    //ある2以上の整数nが与えられます．
+                    //1からnまでの和を出力するgetSum()関数を作成してください．
+                    // function getSum(n) { 
+                    //     sum = 0;  //変数に最初に代入する始まりとしての数値
+                    //     for ( i = 1; i <= n ; i++) {
+                    //         sum = sum + i
+                    //     }
+                    //     return sum
+                    // }
+
+                    // console.log(getSum(10)); // 55
+                    // console.log(getSum(99)); // 4950
+                
+                //no22 数字の桁数
+                    //ある 10 進数の正の整数nが与えられます．
+                    //nが何桁かを数字で出力するgetNumberOfDigits()関数を作成してください．
+                    // function getNumberOfDigits(n) {
+                    //      return n.toString().length;   //toString()で一度数字を文字列に変換して長さを求める
+
+                    //  }
+
+                    // console.log(getNumberOfDigits(100)); // 3
+                    // console.log(getNumberOfDigits(114514)); // 6
+                
+                //no23 サイコロの裏面
+                    //一般的な 6 面サイコロの目を表す整数nに対し，その裏側にある目を出力するgetBackSide()関数を作成してください．
+                    // function getBackSide(n) {
+                    //     return 7-n
+                    //  }
+
+                    // console.log(getBackSide(1)); // 6
+                    // console.log(getBackSide(3)); // 4
+                
+                //no24 単位の変換
+                    //ある正の整数nが入力されます．
+                    //n分から秒へ変換するconvertToSeconds()関数を作成してください．
+                    // function convertToSeconds(n) {
+                    //     return n*60
+                    //  }
+
+                    // console.log(convertToSeconds(16)); // 960
+                    // console.log(convertToSeconds(3)); // 180
+                
+                //no25 充電時間
+                    //1 分間で 1 % の充電が可能なスマートフォンの充電器があります．
+                    //現在のスマートフォンのバッテリーの残量n % からこの充電器で 100 % まで充電するのに何分かかるかを求めるgetTimeUntilFull()関数を作成してください．
+                    // function getTimeUntilFull(n) { 
+                    //     return 100-n
+                    // }
+                    // console.log(getTimeUntilFull(70)); // 30
+                    // console.log(getTimeUntilFull(25)); // 75 
+
+                // //no26 頭文字
+                //     //あなたは半角アルファベットの苗字と名前からそれぞれ 1 文字目を取りイニシャルを作ることにしました．
+                //     //半角スペース区切りで苗字と名前が入力されるので，1 文字目を取り "."(半角ドット)で区切った文字列を出力するgetInitialFromName()関数を作成してください．
+                //     function getInitialFromName(s) { 
+                        
+                //     }
+
+                //     console.log(getInitialFromName("Dio Brando")); // D.B
+                //     console.log(getInitialFromName("Pannacotta Fugo")); // P.F
+                //     console.log(getInitialFromName("Gyro Zeppeli")); // G.Z
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
